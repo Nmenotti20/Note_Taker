@@ -24,19 +24,31 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 //**********************************************************************//
 class Store {
-    // Just like constructor functions, classes can accept arguments
-    constructor(area, perimeter) {
-      this.title = area;
-      this.body = perimeter;
-    }
+
+    //write method
+    //getNotes
+
+    //addNotes
+
+    //removeNotes
+
+
+
+    // // Just like constructor functions, classes can accept arguments
+    // constructor(area, perimeter) {
+    //   this.title = area;
+    //   this.body = perimeter;
+    // }
   
-    printInfo() {
-      console.log(`Title: ${this.tile}`);
-      console.log(`Body: ${this.body}`);
-    }
+    // printInfo() {
+    //   console.log(`Title: ${this.tile}`);
+    //   console.log(`Body: ${this.body}`);
+    // }
   }
   
-  const Store = new Store(25, 25);
+  //const Store = new Store(25, 25);
   
-  store.printInfo();
+  //store.printInfo();
+
+  module.exports = new Store();
   
