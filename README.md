@@ -15,13 +15,13 @@
 
 ### Project Description
 
-This project's pupose is ...
+This application uses express.js to store and retreive data from a JSON file. It provides an html page which allows the user to create notes and save them to a list to be able to refer to them later. The notes can be delted as they are completed.
 
 #### User Story
 
-EXAMPLE ***************************************************************************************************************As a manager
-I want to generate a webpage that displays my team's basic info
-so that I have quick access to emails and GitHub profiles
+As a user
+I want to have an app to keep notes
+so that I can keep track of important things I need to remember.
 
 #### Project Links
 
