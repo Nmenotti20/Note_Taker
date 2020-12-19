@@ -1,6 +1,8 @@
+// Import files and modules
 const router = require("express").Router();
 const store = require("../db/store");
 
+// Establish apiRoutes 
 router.get("./notes", (req, res) => {
     store
         .getNotes()
@@ -8,6 +10,7 @@ router.get("./notes", (req, res) => {
         .catch((err) => res.status(500).json(err))
 });
 
+// API post request
 router.post("./notes", (req, res) => {
     store
         .addNote(req.body)
@@ -22,6 +25,5 @@ router.delete("./notes:id", (req, res) => {
         .catch((err) => res.status(500).json(err))
 });
 
-
+// Export the module
 module.exports = router
-
