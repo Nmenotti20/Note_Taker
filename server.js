@@ -10,7 +10,11 @@ const PORT = process.env.PORT || 3000;
 // Set up body parsing, static, and route middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Use "public" directory
 app.use(express.static("public"));
+
+// Use these routes
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
