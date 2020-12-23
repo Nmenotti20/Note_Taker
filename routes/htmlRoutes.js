@@ -5,7 +5,7 @@ const router = require("express").Router();
 
 // Establish htmlRoutes
 // Get request for notes to return the notes to 'notes.html' file located inside the 'public' directory
-router.get("./notes", (req, res) => {
+router.get("/notes", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/notes.html"))
 });
 
@@ -16,5 +16,3 @@ router.get("*", (req, res) => {
 
 // Export the module
 module.exports = router
-
-
